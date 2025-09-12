@@ -23,3 +23,8 @@ h1{
        color: var(--primary);
     font-size: 2rem;
 }
+form{
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
