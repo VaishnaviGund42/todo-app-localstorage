@@ -17,3 +17,9 @@ body{
     width: 300px;
     text-align: center;
 }
+h1{
+    margin-bottom: 20px;
+    text-align: center;
+       color: var(--primary);
+    font-size: 2rem;
+}
