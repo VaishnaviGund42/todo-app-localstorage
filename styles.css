@@ -1,34 +1,44 @@
-body{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #333;
-}
-.container{
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 300px;
-    text-align: center;
-}
-h1{
-    margin-bottom: 20px;
-    text-align: center;
-       color: var(--primary);
-    font-size: 2rem;
-}
-form{
-    display: flex;
-    margin-bottom: 20px;
-    gap: 10px;
-}
-input[type="text"] {
+:root {
+            --primary: #4f8cff;
+            --bg: #f4f6fb;
+            --card: #fff;
+            --border: #e0e0e0;
+            --text: #222;
+            --accent: #ff5c5c;
+        }
+        body {
+            background: var(--bg);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: #415E72 ;
+        }
+        .container {
+            background: var(--card);
+            margin-top: 40px;
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            width: 100%;
+            max-width: 400px;
+        }
+        
+h1 {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+        form {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        input[type="text"] {
             flex: 1;
             padding: 0.7rem;
             border: 1px solid var(--border);
@@ -37,7 +47,7 @@ input[type="text"] {
             outline: none;
             transition: border 0.2s;
         }
-input[type="text"]:focus {
+        input[type="text"]:focus {
             border-color: var(--primary);
         }
         button {
@@ -51,14 +61,14 @@ input[type="text"]:focus {
             transition: background 0.2s;
         }
         button:hover {
-            background: var(--primary-dark);
+            background: #3467d6;
         }
         ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
-         .todo-item {
+        .todo-item {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -79,11 +89,11 @@ input[type="text"]:focus {
             text-decoration: line-through;
             color: #aaa;
         }
-        .actions {
+ .actions {
             display: flex;
             gap: 0.5rem;
         }
-           .delete-btn, .complete-btn {
+        .delete-btn, .complete-btn {
             background: none;
             border: none;
             cursor: pointer;
@@ -104,7 +114,7 @@ input[type="text"]:focus {
         .complete-btn:hover {
             background: #eaf1ff;
         }
-         @media (max-width: 500px) {
+@media (max-width: 500px) {
             .container {
                 padding: 1rem 0.5rem;
                 margin-top: 10px;
@@ -114,8 +124,4 @@ input[type="text"]:focus {
                 font-size: 1.3rem;
             }
         }
-
-
-
-
 
