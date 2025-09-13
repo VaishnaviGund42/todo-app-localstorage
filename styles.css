@@ -104,6 +104,17 @@ input[type="text"]:focus {
         .complete-btn:hover {
             background: #eaf1ff;
         }
+         @media (max-width: 500px) {
+            .container {
+                padding: 1rem 0.5rem;
+                margin-top: 10px;
+                max-width: 98vw;
+            }
+            h1 {
+                font-size: 1.3rem;
+            }
+        }
+
 
 
 
