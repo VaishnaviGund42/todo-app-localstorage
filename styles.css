@@ -58,4 +58,31 @@ input[type="text"]:focus {
             padding: 0;
             margin: 0;
         }
+         .todo-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.7rem 0.5rem;
+            border-bottom: 1px solid var(--border);
+            transition: background 0.2s;
+        }
+        .todo-item:last-child {
+            border-bottom: none;
+        }
+        .todo-text {
+            flex: 1;
+            color: var(--text);
+            font-size: 1rem;
+            word-break: break-word;
+        }
+        .completed .todo-text {
+            text-decoration: line-through;
+            color: #aaa;
+        }
+        .actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+
 
